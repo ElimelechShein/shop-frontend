@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
             <div className="flex space-x-4">
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">support@stores.co.il</span>
+                <span className="text-gray-300">e0527102442@gmail.com</span>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  צור קשר
+                  צור קשר 0547648848
                 </a>
               </li>
               <li>
