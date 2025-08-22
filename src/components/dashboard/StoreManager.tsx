@@ -1,6 +1,6 @@
 // src/pages/dashboard/StoreManager.tsx
 import React, { useState, useEffect } from "react";
-import { Plus, Store, Trash2, ExternalLink, Package } from "lucide-react";
+import { Plus, Store, Trash2, ExternalLink, Package, ShoppingBag } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import api from "../../lib/api";
 
@@ -73,6 +73,13 @@ const StoreManager: React.FC = () => {
                     className="text-gray-600 hover:text-blue-700"
                   >
                     <Package className="h-5 w-5" />
+                  </button>
+                  <button
+                    onClick={() => navigate(`/dashboard/orders/${store._id}`)}
+                    title="צפה בהזמנות"
+                    className="text-gray-600 hover:text-green-700"
+                  >
+                    <ShoppingBag className="h-5 w-5" />
                   </button>
                   <a
                     href={`/store/${store.slug}`}

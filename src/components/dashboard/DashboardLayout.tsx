@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { 
   Store, 
   Package, 
-  ShoppingBag, 
   BarChart3, 
   Menu, 
   X,
@@ -38,12 +37,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
       icon: Package,
       current: location.pathname.startsWith('/dashboard/products')
     },
-    {
-      name: 'הזמנות',
-      href: '/dashboard/orders',
-      icon: ShoppingBag,
-      current: location.pathname.startsWith('/dashboard/orders')
-    }
+
   ];
 
   return (

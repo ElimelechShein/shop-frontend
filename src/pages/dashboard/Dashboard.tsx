@@ -5,7 +5,7 @@ import DashboardHome from '../../components/dashboard/DashboardHome';
 import StoreManager from '../../components/dashboard/StoreManager';
 import NewStore from '../../components/dashboard/NewStore';
 import ProductManager from '../../components/dashboard/ProductManager';
-// import OrderManager from '../../components/dashboard/OrderManager';
+import OrderManager from '../../components/dashboard/OrderManager';
 
 const Dashboard: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const Dashboard: React.FC = () => {
         <Route path="/products/:storeId" element={<ProductManager />} />
         
         {/* ניהול הזמנות */}
-        {/* <Route path="/orders/:storeId?" element={<OrderManager />} /> */}
+        <Route path="/orders/:storeId" element={<OrderManager />} />
       </Routes>
     </DashboardLayout>
   );

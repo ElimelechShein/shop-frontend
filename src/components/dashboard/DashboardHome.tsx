@@ -151,10 +151,10 @@ const DashboardHome: React.FC = () => {
           <div className="bg-gray-50 px-5 py-3">
             <div className="text-sm">
               <Link
-                to="/dashboard/products"
+                to="/dashboard/stores"
                 className="font-medium text-blue-700 hover:text-blue-900"
               >
-                נהל מוצרים
+                נהל חנויות
               </Link>
             </div>
           </div>
@@ -180,13 +180,8 @@ const DashboardHome: React.FC = () => {
             </div>
           </div>
           <div className="bg-gray-50 px-5 py-3">
-            <div className="text-sm">
-              <Link
-                to="/dashboard/orders"
-                className="font-medium text-blue-700 hover:text-blue-900"
-              >
-                צפה בהזמנות
-              </Link>
+            <div className="text-sm text-gray-500">
+              הזמנות נראות דרך ניהול חנויות
             </div>
           </div>
         </div>
@@ -288,29 +283,9 @@ const DashboardHome: React.FC = () => {
               </div>
             </Link>
             
-            <Link
-              to="/dashboard/products"
-              className="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm hover:border-gray-400 transition-colors"
-            >
-              <div className="flex items-center space-x-3">
-                <Package className="h-6 w-6 text-green-600" />
-                <span className="text-sm font-medium text-gray-900">
-                  הוסף מוצרים
-                </span>
-              </div>
-            </Link>
+
             
-            <Link
-              to="/dashboard/orders"
-              className="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm hover:border-gray-400 transition-colors"
-            >
-              <div className="flex items-center space-x-3">
-                <ShoppingBag className="h-6 w-6 text-purple-600" />
-                <span className="text-sm font-medium text-gray-900">
-                  צפה בהזמנות
-                </span>
-              </div>
-            </Link>
+
           </div>
         </div>
       </div>
